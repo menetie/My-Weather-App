@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+  <title>WeatherApp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <form id="search-form" class="search-form">
+      <input type="search" placeholder="Enter a city" autocomplete="off" autofocus="on" id="city-input" />
+      <span><button class="btn btn-primary" type="submit" value="Search">Search</button></span>
+      <br /><input class="btn btn-primary" type="button" id="current-button" value="Current" />
+    </form>
+    <h1>
+      <strong id="city">Warri</strong> <span><i class="fa-regular fa-cloud"></i></span>
+    </h1>
+    <h2 class="current-day" id="current-day">Friday 23: 08</h2>
+    <h3><span id="temp">⛈️ 24</span>
+
+      <span class="unit">
+        <a href="#" id="celcius"> °C</a>
+        <a href="#" id="fahrenheit"> °F</a>
+      </span>
+    </h3>
+    <span id="description"> Partly cloudy</span>
+    <br />
+    Precipitation:
+    <span id="precipitation"> 91 %</span>
+    <br />
+    Wind:
+    <span id="wind"> 1 km/h</span>
+    <br />
+    <span id="Humidity"> </span>
+    <div class="row row-cols-5">
+      <div class="col">Sat <br />⛈️ <br />24°</div>
+      <div class="col">Sun <br />⛈️ <br />24°</div>
+      <div class="col">Mon <br />🌥️ <br />26°</div>
+      <div class="col">Tue <br />🌦️ <br />28°</div>
+      <div class="col">Wed <br />⛈️ <br />24°</div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
